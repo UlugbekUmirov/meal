@@ -14,7 +14,7 @@ export default function FilterItem(props) {
       </div>
 
       <div className="card-action">
-        <Link to={`/meal/${idMeal}`} className="btn  purple darken-3">
+        <Link to={`/meal/${idMeal}`} className="btn">
           Watch Recipe
         </Link>
       </div>

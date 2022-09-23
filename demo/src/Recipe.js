@@ -44,7 +44,7 @@ export default function Recipe() {
               <b>Show Recipe</b>
             </div>
             {showrecipe ? (
-              <table className="centred">
+              <table className="striped">
                 <thead>
                   <tr>
                     <th>Ingradient</th>

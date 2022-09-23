@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function CategorieItem(props) {
-  const { idCategory, strCategory, strCategoryThumb, strCategoryDescription } =
-    props;
+  const { strCategory, strCategoryThumb, strCategoryDescription } = props;
   return (
     <div className="card">
       <div className="col s12 m7">
@@ -18,7 +17,7 @@ export default function CategorieItem(props) {
         </div>
       </div>
       <div className="card-action">
-        <Link to={`category/${strCategory}`} className="btn  purple darken-3">
+        <Link to={`category/${strCategory}`} className="btn ">
           Watch category
         </Link>
       </div>

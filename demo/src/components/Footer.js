@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <div>
@@ -11,27 +13,39 @@ export default function Footer() {
                 content.
               </p>
             </div>
-            <div className="col l4 offset-l2 s12">
+            <div className="col l4 offset-l2 s12 ">
               <h5 className="white-text">Links</h5>
-              <ul>
+              <ul className="d-flex">
                 <li>
-                  <a className="grey-text text-lighten-3" href="#!">
-                    Link 1
+                  <a
+                    className="grey-text text-lighten-3"
+                    href="https://t.me/umirovulugbe"
+                  >
+                    <img src="https://img.icons8.com/ios-filled/20/000000/telegram.png" />
                   </a>
                 </li>
                 <li>
-                  <a className="grey-text text-lighten-3" href="#!">
-                    Link 2
+                  <a
+                    className="grey-text text-lighten-3"
+                    href="https://instagram.com/um1rov.06/"
+                  >
+                    <img src="https://img.icons8.com/ios-filled/20/000000/instagram.png" />
                   </a>
                 </li>
                 <li>
-                  <a className="grey-text text-lighten-3" href="#!">
-                    Link 3
+                  <a
+                    className="grey-text text-lighten-3"
+                    href="twitter.com/ulugbekumirov"
+                  >
+                    <img src="https://img.icons8.com/ios-filled/20/000000/twitter.png" />
                   </a>
                 </li>
                 <li>
-                  <a className="grey-text text-lighten-3" href="#!">
-                    Link 4
+                  <a
+                    className="grey-text text-lighten-3"
+                    href="https://www.linkedin.com/in/ulugbek-umirov-b79094231/"
+                  >
+                    <img src="https://img.icons8.com/ios-filled/20/000000/linkedin.png" />
                   </a>
                 </li>
               </ul>
@@ -41,9 +55,9 @@ export default function Footer() {
         <div className="footer-copyright">
           <div className="container">
             © {new Date().getFullYear()} Copyright Text
-            <a className="grey-text text-lighten-4 right" href="#!">
+            <Link className="grey-text text-lighten-4 right" to="/">
               More Links
-            </a>
+            </Link>
           </div>
         </div>
       </footer>

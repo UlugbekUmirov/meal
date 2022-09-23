@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Search({ cb }) {
+export default function Search({ cb = Function.prototype }) {
   const [value, setValue] = useState([]);
   const handleSubmit = () => {
     cb(value);

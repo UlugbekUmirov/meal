@@ -32,9 +32,22 @@ body {
 .card {
   display: flex;
   flex-direction: column;
+  transition: all 0.5s ease;
+}
+.card:hover {
+  transform: scale(1.05);
 }
 .card-content {
   flex-grow: 1;
+}
+.btn {
+  background-color: #6a1b9a;
+}
+.card-action .btn:hover {
+  border: 2px solid #6a1b9a;
+  background-color: white;
+  color: #6a1b9a;
+  font-weight: 700;
 }
 .recipe-img {
   margin: 10px 0px;
